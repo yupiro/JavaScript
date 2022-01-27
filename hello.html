@@ -1,0 +1,75 @@
+<meta charset="utf-8" />
+<h1>JavaScriptを試すページ</h1>
+<script>
+    console.log("Hello World");
+
+    // function increment(n) {
+    //     return n + 1;
+    // }
+
+    // const result = increment(1);
+    // console.log(result);
+
+    function getOne(){
+        return 1;
+    }
+
+    const result2 = getOne();
+    console.log(result2);
+
+    // function foo(){
+    //     const result = foo();
+    //     console.log(result);
+    // }
+
+    const increment = function (n){
+        return n + 1;
+    };
+    console.log(increment(1));
+
+    const increment2 = function(a,b){
+        return a + b;
+    };
+    console.log("incremtent2(1,1)");
+    console.log(increment2(1,1));
+    console.log("incremtent2(2,3)");
+    console.log(increment2(2,3));
+
+    // button.addEventlisner("click", function(event){
+    //     console.log("クリックされました。");
+    // });
+    
+    const factrial = function fact(n) {
+        if (n <= 1) return 1;
+        return n * fact(n - 1);
+    };
+    console.log("factrial(5)");
+    console.log(factrial(5));
+    // console.log("fact(5)");
+    // console.log(fact(5));
+
+    const increment3  = (n) => {
+        return n + 1;
+    };
+    console.log("increment3(7)");
+    console.log(increment3(7));
+
+
+    const factrial2 = (n) => {
+        if (n <= 1) return 1;
+        return n * factrial2(n-1);
+    };
+    console.log("factrial2(5)");
+    console.log(factrial2(5));
+
+    console.log("factrial2(6)");
+    console.log(factrial2(6));
+
+    // const Hello = (n) => {
+    //     return Hello(console.log("hello"));
+    // };
+    // console.log(Hello());
+
+
+
+</script>
